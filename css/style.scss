@@ -1,0 +1,97 @@
+$white: #fff;
+$color_blue_bayoux: #55687d;
+$color_wild_sand: whitesmoke;
+$color_contessa: #d27971;
+$color_alabaster: #f9f9f9;
+$color_tropical_blue: #c4daff;
+$color_ship_cove: #7c97b7;
+$color_guardsman_red: #cc0000;
+
+* {
+	font-family: Exo 2, sans-serif;
+}
+body {
+	background: url(images/building.jpg) no-repeat center fixed !important;
+	background-size: cover;
+}
+.btn {
+	top: -4em;
+	position: relative;
+	margin-right: 2em;
+	margin-top: 1em;
+	cursor: pointer;
+	color: $white;
+	border-top-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+	border-style: none;
+	padding: 1em;
+}
+.main {
+	
+	box-shadow: 0 0 20px $color_blue_bayoux_approx;
+	padding: 2em;
+	border-top-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+	border-style: none;
+	text-align: center;
+	margin: 2em auto;
+	background-color: $color_wild_sand_approx;
+	width: 11em;
+	height: 5em;
+}
+#results {
+	cursor: pointer;
+	box-shadow: 0 0 20px $color_blue_bayoux_approx;
+	padding: 2em;
+	border-top-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+	border-style: none;
+	text-align: center;
+	margin: 2em auto;
+	background-color: $color_wild_sand_approx;
+	width: 75%;
+	&:hover {
+		box-shadow: 0 0 20px $color_contessa_approx;
+		background: $color_alabaster_approx;
+		background: linear-gradient(to bottom, $color_alabaster_approx 0, $color_tropical_blue_approx 80%, $color_ship_cove_approx 98%, $color_blue_bayoux_approx 100%);
+		filter: progid: dximagetransform.microsoft.gradient(startcolorstr='$color_alabaster_approx', endcolorstr='$color_blue_bayoux_approx', gradienttype=0);
+	}
+}
+#app-title {
+	top: -3em;
+	position: relative;
+}
+#textbox {
+	top: -4em;
+	position: relative;
+	border-style: none;
+	box-shadow: 0 0 10px $color_contessa_approx;
+}
+#search {
+	background: $color_contessa_approx;
+	box-shadow: 0 0 10px $color_blue_bayoux_approx;
+	&:hover {
+		background: $color_blue_bayoux_approx;
+		box-shadow: 0 0 10px $color_guardsman_red_approx;
+		transform: scale(1.1);
+		transition: all 0.1s ease;
+	}
+	&:active {
+		transform: scale(0.9);
+		transition: all 0.1s ease;
+	}
+}
+#random {
+	background: $color_blue_bayoux_approx;
+	box-shadow: 0 0 10px $color_contessa_approx;
+	&:hover {
+		background: $color_contessa_approx;
+		box-shadow: 0 0 10px $color_blue_bayoux_approx;
+		transform: scale(1.1);
+		transition: all 0.1s ease;
+	}
+	&:active {
+		transform: scale(0.9);
+		transition: all 0.1s ease;
+	}
+}

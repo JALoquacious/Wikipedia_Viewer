@@ -1,0 +1,107 @@
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background: url('https://dl.dropboxusercontent.com/s/8bjmgsjgo6969dr/building.jpg') no-repeat center fixed !important;
+    background-size: cover;
+}
+
+.btn {
+    top: -4em;
+    position: relative;
+    margin-right: 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    color: #fff;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-style: none;
+    padding: 1em;
+}
+
+.main {
+    box-shadow: 0 0 20px #55687D;
+    padding: 2em;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-style: none;
+    text-align: center;
+    margin: 2em auto;
+    background-color: whitesmoke;
+    width: 11em;
+    height: 5em;
+}
+
+#results {
+    cursor: pointer;
+    box-shadow: 0 0 20px #55687D;
+    padding: 2em;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-style: none;
+    text-align: center;
+    margin: 2em auto;
+    background-color: whitesmoke;
+    width: 75%;
+}
+
+#results:hover {
+    box-shadow: 0 0 20px #D27971;
+    background: #f9f9f9;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #c4daff 80%, #7c97b7 98%, #55687d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%, #c4daff 80%, #7c97b7 98%, #55687d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9f9f9 0%, #c4daff 80%, #7c97b7 98%, #55687d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#55687d', GradientType=0);
+    /* IE6-9 */
+}
+
+#app-title {
+    top: -3em;
+    position: relative;
+}
+
+#textbox {
+    top: -4em;
+    position: relative;
+    border-style: none;
+    box-shadow: 0 0 10px #D27971;
+}
+
+#search {
+    background: #D27971;
+    box-shadow: 0 0 10px #55687D;
+}
+
+#search:hover {
+    background: #55687D;
+    box-shadow: 0 0 10px #CC0000;
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+}
+
+#search:active {
+    transform: scale(0.9);
+    transition: all 0.1s ease;
+}
+
+#random {
+    background: #55687D;
+    box-shadow: 0 0 10px #D27971;
+}
+
+#random:hover {
+    background: #D27971;
+    box-shadow: 0 0 10px #55687D;
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+}
+
+#random:active {
+    transform: scale(0.9);
+    transition: all 0.1s ease;
+}
