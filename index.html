@@ -1,0 +1,37 @@
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>Wikipedia Viewer</title>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css' />
+</head>
+
+<body ng-app='wikiGrabber' ng-controller='mainCtrl'>
+    <form>
+        <div class='main' id='searchbox'>
+            <h4 id='app-title'>Wikipedia Search</h4>
+            <form>
+                <input id='textbox' type='text' ng-model='queryString' placeholder='{{hint}}' />
+                <table>
+                    <tr>
+                        <td>
+                            <input type='submit' value='page->' class='btn' id='search' ng-click='external(queryString, $event)' />
+                        </td>
+                        <td>
+                            <input type='button' value='random' class='btn' id='random' ng-click='random()' />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </form>
+    <div id='results' ng-cloak ng-repeat='element in data'>
+    <a ng-src='element.url'>
+        <div ng-click='source(element, $event)' ng-keyup='source(element, $event)'>
+            <h3>{{ element.title }}</h3>
+            <p>{{ element.extract }}</p>
+        </div>
+    </a>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src='js/logic.js'></script>
+</body>
